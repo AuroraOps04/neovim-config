@@ -45,7 +45,7 @@ return packer.startup(function(use)
   use "nvim-lua/popup.nvim" -- An implementation of the Popup API from vim in Neovim
   use "nvim-lua/plenary.nvim" -- Useful lua functions used ny lots of plugins
 
- -- ========================== UI Setting ========================
+  -- ========================== UI Setting ========================
   -- color theme
   use 'folke/tokyonight.nvim'
   use {
@@ -57,13 +57,13 @@ return packer.startup(function(use)
     'nvim-lualine/lualine.nvim',
     requires = { 'kyazdani42/nvim-web-devicons', opt = true },
   }
- -- ========================== UI Setting ========================
+  -- ========================== UI Setting ========================
   use {
     'nvim-tree/nvim-tree.lua',
     requires = {
       'nvim-tree/nvim-web-devicons', -- optional, for file icons
     },
-  --    tag = 'nightly' -- optional, updated every week. (see issue #1193)
+    --    tag = 'nightly' -- optional, updated every week. (see issue #1193)
   }
 
   -- ========================== Cmp ========================
@@ -77,7 +77,7 @@ return packer.startup(function(use)
   use "hrsh7th/cmp-nvim-lsp"
   -- snippets
   use "L3MON4D3/LuaSnip" --snippet engine
-  use "rafamadriz/friendly-snippets" -- a bunch of snippets to use 
+  use "rafamadriz/friendly-snippets" -- a bunch of snippets to use
 
 
 
@@ -89,16 +89,19 @@ return packer.startup(function(use)
   use "williamboman/mason.nvim" -- simple to use language server installer
   use "williamboman/mason-lspconfig.nvim" -- simple to use language server installer
   use 'jose-elias-alvarez/null-ls.nvim' -- LSP diagnostics and code actions
+  -- 通过 LSP treesitter regexp 来突出显示关联的单词的
+ use { "RRethy/vim-illuminate", commit = "a2e8476af3f3e993bb0d6477438aad3096512e42" }
   -- ========================== Lsp ========================
 
 
-  
+
   -- ========================== Telescope ========================
   use "nvim-telescope/telescope.nvim"
   use 'nvim-telescope/telescope-media-files.nvim'
   -- ========================== Telescope ========================
 
-
+  use { "numToStr/Comment.nvim", commit = "97a188a98b5a3a6f9b1b850799ac078faa17ab67" }
+  use { "JoosepAlviste/nvim-ts-context-commentstring", commit = "4d3a68c41a53add8804f471fcc49bb398fe8de08" }
 
   -- Treesitter
   use {
@@ -108,6 +111,16 @@ return packer.startup(function(use)
   use "p00f/nvim-ts-rainbow"
   use "nvim-treesitter/playground"
 
+  use { "lewis6991/gitsigns.nvim", commit = "2c6f96dda47e55fa07052ce2e2141e8367cbaaf2" }
+  use { "folke/which-key.nvim" }
+  use { "goolord/alpha-nvim", commit = "0bb6fc0646bcd1cdb4639737a1cee8d6e08bcc31" }
+  use { "ahmedkhalf/project.nvim", commit = "628de7e433dd503e782831fe150bb750e56e55d6" }
+  use { "akinsho/toggleterm.nvim", commit = "2a787c426ef00cb3488c11b14f5dcf892bbd0bda" }
+  use { "lukas-reineke/indent-blankline.nvim", commit = "db7cbcb40cc00fc5d6074d7569fb37197705e7f6" }
+  -- 提高启动速度的
+  use { "lewis6991/impatient.nvim", commit = "b842e16ecc1a700f62adb9802f8355b99b52a5a6" }
+  -- 用来删除缓冲区,但是不关闭窗口的 command: Bdelete Bwipeout
+use { "moll/vim-bbye", commit = "25ef93ac5a87526111f43e5110675032dbcacf56" }
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
 
