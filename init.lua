@@ -7,3 +7,5 @@ require("plugins.cmp")
 require("plugins.bufferline")
 require("plugins.lualine")
 require("plugins.lsp")
+require("plugins.telescope")
+

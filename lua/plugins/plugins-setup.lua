@@ -90,8 +90,20 @@ return packer.startup(function(use)
   use "williamboman/mason-lspconfig.nvim" -- simple to use language server installer
   use 'jose-elias-alvarez/null-ls.nvim' -- LSP diagnostics and code actions
   -- ========================== Lsp ========================
+
+
+  
+  -- ========================== Telescope ========================
+  use "nvim-telescope/telescope.nvim"
+  use 'nvim-telescope/telescope-media-files.nvim'
+  -- ========================== Telescope ========================
+
+
+
+
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
+
   if PACKER_BOOTSTRAP then
     require("packer").sync()
   end

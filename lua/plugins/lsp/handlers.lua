@@ -2,7 +2,7 @@ local M = {}
 
 -- 设置 sign 列样式 配置 diagnostic(lint)
 M.setup = function()
- local signs = {
+  local signs = {
     { name = "DiagnosticSignError", text = "" },
     { name = "DiagnosticSignWarn", text = "" },
     { name = "DiagnosticSignHint", text = "" },
@@ -56,7 +56,7 @@ local function lsp_highlight_document(client)
         autocmd CursorHold <buffer> lua vim.lsp.buf.document_highlight()
         autocmd CursorMoved <buffer> lua vim.lsp.buf.clear_references()
       augroup END
-    ]],
+    ]] ,
       false
     )
   end
@@ -95,7 +95,7 @@ local function lsp_keymaps(bufnr)
   -- 不知道干嘛
   vim.api.nvim_buf_set_keymap(bufnr, "n", "<leader>q", "<cmd>lua vim.diagnostic.setloclist()<CR>", opts)
   -- format 的时候执行 lsp 的 format
-  vim.cmd [[ command! Format execute 'lua vim.lsp.buf.formatting()' ]]
+  vim.cmd [[ command! Format execute 'lua vim.lsp.buf.format()' ]]
 end
 
 -- on_attach 是 lsp 启动的时候的钩子函数
@@ -107,7 +107,7 @@ M.on_attach = function(client, bufnr)
   lsp_highlight_document(client)
 end
 
--- 获取 neovim lsp client 支持的能力 
+-- 获取 neovim lsp client 支持的能力
 local capabilities = vim.lsp.protocol.make_client_capabilities()
 
 local status_ok, cmp_nvim_lsp = pcall(require, "cmp_nvim_lsp")
