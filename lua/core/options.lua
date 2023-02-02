@@ -60,5 +60,5 @@ vim.cmd "set whichwrap+=<,>,[,],h,l"
 -- 将 `-` 设置为字符的连接符
 vim.cmd [[set iskeyword+=-]]
 vim.cmd [[set formatoptions-=cro]] -- TODO: this doesn't seem to work
-
+-- opt.background = "light"
 

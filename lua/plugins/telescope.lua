@@ -3,7 +3,10 @@ if not status_ok then
   return
 end
 
+local media_files_ok, _ = pcall(require, "media_files") 
+if media_files_ok then
 telescope.load_extension('media_files')
+end
 
 local actions = require "telescope.actions"
 

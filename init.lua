@@ -18,4 +18,6 @@ require("plugins.alpha")
 require("plugins.whichkey")
 require("plugins.impatient")
 require("plugins.indentline")
-
+require("plugins.autocmd")
+require("plugins.treesitter-textobj")
+require("plugins.autopairs")

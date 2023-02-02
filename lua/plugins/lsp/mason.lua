@@ -26,6 +26,8 @@ local servers = {
   "sumneko_lua",
   "pyright",
   "jsonls",
+  "volar",
+ "tsserver"
 }
 mason_lspconfig.setup {
   ensure_installed = servers,

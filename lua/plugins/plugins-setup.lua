@@ -63,6 +63,7 @@ return packer.startup(function(use)
     requires = {
       'nvim-tree/nvim-web-devicons', -- optional, for file icons
     },
+    use "morhetz/gruvbox",
     --    tag = 'nightly' -- optional, updated every week. (see issue #1193)
   }
 
@@ -90,7 +91,7 @@ return packer.startup(function(use)
   use "williamboman/mason-lspconfig.nvim" -- simple to use language server installer
   use 'jose-elias-alvarez/null-ls.nvim' -- LSP diagnostics and code actions
   -- 通过 LSP treesitter regexp 来突出显示关联的单词的
- use { "RRethy/vim-illuminate", commit = "a2e8476af3f3e993bb0d6477438aad3096512e42" }
+  use { "RRethy/vim-illuminate", commit = "a2e8476af3f3e993bb0d6477438aad3096512e42" }
   -- ========================== Lsp ========================
 
 
@@ -110,7 +111,7 @@ return packer.startup(function(use)
   }
   use "p00f/nvim-ts-rainbow"
   use "nvim-treesitter/playground"
-
+  use "nvim-treesitter/nvim-treesitter-textobjects"
   use { "lewis6991/gitsigns.nvim", commit = "2c6f96dda47e55fa07052ce2e2141e8367cbaaf2" }
   use { "folke/which-key.nvim" }
   use { "goolord/alpha-nvim", commit = "0bb6fc0646bcd1cdb4639737a1cee8d6e08bcc31" }
@@ -120,7 +121,8 @@ return packer.startup(function(use)
   -- 提高启动速度的
   use { "lewis6991/impatient.nvim", commit = "b842e16ecc1a700f62adb9802f8355b99b52a5a6" }
   -- 用来删除缓冲区,但是不关闭窗口的 command: Bdelete Bwipeout
-use { "moll/vim-bbye", commit = "25ef93ac5a87526111f43e5110675032dbcacf56" }
+  use { "moll/vim-bbye", commit = "25ef93ac5a87526111f43e5110675032dbcacf56" }
+  use "windwp/nvim-autopairs"
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
 
