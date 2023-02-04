@@ -123,6 +123,7 @@ return packer.startup(function(use)
   -- 用来删除缓冲区,但是不关闭窗口的 command: Bdelete Bwipeout
   use { "moll/vim-bbye", commit = "25ef93ac5a87526111f43e5110675032dbcacf56" }
   use "windwp/nvim-autopairs"
+  use "ggandor/leap.nvim";
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
 
