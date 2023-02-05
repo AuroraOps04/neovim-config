@@ -124,7 +124,8 @@ return packer.startup(function(use)
   use { "moll/vim-bbye", commit = "25ef93ac5a87526111f43e5110675032dbcacf56" }
   use "windwp/nvim-autopairs"
   use "ggandor/leap.nvim"
-  use "Pocco81/auto-save.nvim"
+  -- use "Pocco81/auto-save.nvim"
+  use { 'kevinhwang91/nvim-ufo', requires = 'kevinhwang91/promise-async' }
 
 
   -- Automatically set up your configuration after cloning packer.nvim
