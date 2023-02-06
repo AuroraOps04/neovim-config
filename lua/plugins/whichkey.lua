@@ -73,7 +73,7 @@ local opts = {
   mode = "n", -- NORMAL mode
   prefix = "<leader>",
   buffer = nil, -- Global mappings. Specify a buffer number for buffer local mappings
-  silent = true, -- use `silent` when creating keymaps
+  silent = true, -- use `silent` when creating eeymaps
   noremap = true, -- use `noremap` when creating keymaps
   nowait = true, -- use `nowait` when creating keymaps
 }
@@ -186,7 +186,7 @@ local mappings = {
     v = { "<c-w>s", "split horizontal window" },
     h = { "<c-w>v", "split vertical window" }
   },
-  s = { ":w<CR>", "Save current buffer" }
+  s = { "<cmd>write <CR>", "Save and formt current buffer" }
 }
 
 which_key.setup(setup)

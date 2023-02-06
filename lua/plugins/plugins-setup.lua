@@ -126,7 +126,7 @@ return packer.startup(function(use)
   use "ggandor/leap.nvim"
   -- use "Pocco81/auto-save.nvim"
   use { 'kevinhwang91/nvim-ufo', requires = 'kevinhwang91/promise-async' }
-
+  use "kdheepak/lazygit.nvim"
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
