@@ -129,7 +129,7 @@ return packer.startup(function(use)
   use "kdheepak/lazygit.nvim"
   --  ussing replace with register and don't override register
   use "gbprod/substitute.nvim"
-
+  use "kylechui/nvim-surround"
   -- use {
   --   'crusj/bookmarks.nvim',
   --   branch = 'main',
