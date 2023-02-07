@@ -12,7 +12,11 @@ null_ls.setup {
   autostart = true,
   debug = false,
   sources = {
-    formatting.prettier.with({ extra_args = { "--no-semi", "--single-quote", "--jsx-single-quote" } }),
+    formatting.prettier.with({ extra_args = {
+      "--no-semi", "--single-quote", "--jsx-single-quote",
+      "--html-whitespace-sensitivity ignore", "--tab-width 2", "--print-width 80",
+      "--use-tabs false", "--quote-props as-needed"
+    } }),
     -- formatting.black.with({ extra_args = { "--fast" } }),
     --		formatting.stylua,
     -- diagnostics.flake8,
