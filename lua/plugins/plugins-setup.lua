@@ -127,6 +127,18 @@ return packer.startup(function(use)
   -- use "Pocco81/auto-save.nvim"
   use { 'kevinhwang91/nvim-ufo', requires = 'kevinhwang91/promise-async' }
   use "kdheepak/lazygit.nvim"
+  --  ussing replace with register and don't override register
+  use "gbprod/substitute.nvim"
+
+  -- use {
+  --   'crusj/bookmarks.nvim',
+  --   branch = 'main',
+  --   requires = { 'kyazdani42/nvim-web-devicons' },
+  --   -- config = function()
+  --   --   require("bookmarks").setup()
+  --   --
+  --   -- end
+  -- }
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins

@@ -140,9 +140,9 @@ local mappings = {
       "Workspace Diagnostics",
     },
     f = { "<cmd>lua vim.lsp.buf.format{async=true}<cr>", "Format" },
-    i = { "<cmd>LspInfo<cr>", "Info" },
-    I = { "<cmd>LspInstallInfo<cr>", "Installer Info" },
-    r = { "<cmd>lua vim.lsp.buf.references()", "Show references window" },
+    I = { "<cmd>LspInfo<cr>", "Lsp Info" },
+    r = {"<cmd>lua vim.lsp.buf.references()<CR>", "Show references window"},
+    i = { "<cmd>lua vim.lsp.buf.hover()<cr>", "Show Document" },
     j = {
       "<cmd>lua vim.diagnostic.goto_next()<CR>",
       "Next Diagnostic",
