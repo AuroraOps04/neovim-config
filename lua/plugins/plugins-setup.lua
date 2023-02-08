@@ -118,6 +118,8 @@ return packer.startup(function(use)
   use { "ahmedkhalf/project.nvim", commit = "628de7e433dd503e782831fe150bb750e56e55d6" }
   use { "akinsho/toggleterm.nvim", commit = "2a787c426ef00cb3488c11b14f5dcf892bbd0bda" }
   use { "lukas-reineke/indent-blankline.nvim", commit = "db7cbcb40cc00fc5d6074d7569fb37197705e7f6" }
+
+
   -- 提高启动速度的
   use { "lewis6991/impatient.nvim", commit = "b842e16ecc1a700f62adb9802f8355b99b52a5a6" }
   -- 用来删除缓冲区,但是不关闭窗口的 command: Bdelete Bwipeout
@@ -130,6 +132,19 @@ return packer.startup(function(use)
   --  ussing replace with register and don't override register
   use "gbprod/substitute.nvim"
   use "kylechui/nvim-surround"
+  -- winbar
+  use({
+    "utilyre/barbecue.nvim",
+    tag = "*",
+    requires = {
+      "SmiteshP/nvim-navic",
+      "nvim-tree/nvim-web-devicons", -- optional dependency
+    },
+    after = "nvim-web-devicons", -- keep this if you're using NvChad
+    config = function()
+      require("barbecue").setup()
+    end,
+  })
   -- use {
   --   'crusj/bookmarks.nvim',
   --   branch = 'main',
