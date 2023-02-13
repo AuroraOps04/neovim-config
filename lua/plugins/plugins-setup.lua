@@ -145,6 +145,7 @@ return packer.startup(function(use)
       require("barbecue").setup()
     end,
   })
+  use 'mfussenegger/nvim-jdtls'
   -- use {
   --   'crusj/bookmarks.nvim',
   --   branch = 'main',
