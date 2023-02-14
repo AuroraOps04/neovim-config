@@ -21,6 +21,7 @@ null_ls.setup {
     --		formatting.stylua,
     -- diagnostics.flake8,
     diagnostics.eslint_d,
+    formatting.google_java_format
   },
   -- this config is not work
 
