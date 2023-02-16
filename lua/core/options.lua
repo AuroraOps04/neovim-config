@@ -4,7 +4,7 @@ opt.relativenumber = true
 -- 寄存器和系统剪切板同步
 opt.clipboard = "unnamedplus"
 -- cmdline 高度 为 2 行
-opt.cmdheight = 2
+opt.cmdheight = 1
 -- mostly just for cmp
 opt.completeopt = { "menuone", "noselect" }
 -- 不知道干嘛的

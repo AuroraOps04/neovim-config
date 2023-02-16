@@ -7,7 +7,7 @@ end
 local formatting = null_ls.builtins.formatting
 -- https://github.com/jose-elias-alvarez/null-ls.nvim/tree/main/lua/null-ls/builtins/diagnostics
 local diagnostics = null_ls.builtins.diagnostics
-local augroup = vim.api.nvim_create_augroup("LspFormatting", {})
+-- local augroup = vim.api.nvim_create_augroup("LspFormatting", {})
 null_ls.setup {
   autostart = true,
   debug = false,
@@ -17,11 +17,12 @@ null_ls.setup {
       "--html-whitespace-sensitivity ignore", "--tab-width 2", "--print-width 80",
       "--use-tabs false", "--quote-props as-needed"
     } }),
-    -- formatting.black.with({ extra_args = { "--fast" } }),
-    --		formatting.stylua,
-    -- diagnostics.flake8,
+    formatting.black.with({ extra_args = { "--preview" } }),
+    formatting.stylua,
+    diagnostics.flake8,
     diagnostics.eslint_d,
-    formatting.google_java_format
+    formatting.google_java_format,
+    -- formatting.black,
   },
   -- this config is not work
 
