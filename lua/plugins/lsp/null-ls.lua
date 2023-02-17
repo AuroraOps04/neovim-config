@@ -17,7 +17,7 @@ null_ls.setup {
       "--html-whitespace-sensitivity ignore", "--tab-width 2", "--print-width 80",
       "--use-tabs false", "--quote-props as-needed"
     } }),
-    formatting.black.with({ extra_args = { "--preview" } }),
+    formatting.black.with({ extra_args = { "--preview", "-l 79" } }),
     formatting.stylua,
     diagnostics.flake8,
     diagnostics.eslint_d,
