@@ -26,3 +26,4 @@ require "plugins.ufo"
 require 'plugins.lazygit'
 require 'plugins.substitute'
 require 'plugins.surround'
+require "user.entire"
