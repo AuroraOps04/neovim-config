@@ -146,6 +146,7 @@ return packer.startup(function(use)
     end,
   })
   use 'mfussenegger/nvim-jdtls'
+  use 'jghauser/mkdir.nvim'
   -- use {
   --   'crusj/bookmarks.nvim',
   --   branch = 'main',
