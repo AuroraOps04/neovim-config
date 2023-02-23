@@ -30,6 +30,10 @@ null_ls.setup({
 		diagnostics.eslint_d,
 		formatting.google_java_format,
 		null_ls.builtins.formatting.shfmt,
+		diagnostics.golangci_lint,
+		formatting.gofmt,
+		formatting.goimports,
+		formatting.golines,
 		-- formatting.black,
 	},
 	-- this config is not work

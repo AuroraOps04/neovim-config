@@ -4,7 +4,7 @@ if not status_ok then
 end
 configs.setup {
   ensure_installed = { "vim", "help", "bash", "javascript", "json", "lua", "python", "typescript", "tsx", "css",
-    "markdown", "markdown_inline", "java" },
+    "markdown", "markdown_inline", "java", "go" },
   sync_install = true,
   ignore_install = { "" }, -- List of parsers to ignore installing
   highlight = {
