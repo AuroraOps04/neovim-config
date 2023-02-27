@@ -29,3 +29,4 @@ require 'plugins.surround'
 require "user.entire"
 require "plugins.tmux-navigator"
 require "plugins.snip"
+require "plugins.noice"

@@ -1,5 +1,5 @@
 {
-  "Print to console": {
+  "handle error": {
     "prefix": "err",
     "body": ["if err != nil {", "$1", "}"],
     "description": "golang error "
