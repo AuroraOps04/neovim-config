@@ -28,6 +28,7 @@ null_ls.setup({
     formatting.stylua,
     diagnostics.flake8,
     diagnostics.eslint_d,
+    formatting.eslint_d,
     formatting.google_java_format,
     null_ls.builtins.formatting.shfmt,
     diagnostics.golangci_lint,
