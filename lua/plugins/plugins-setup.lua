@@ -165,6 +165,7 @@ return packer.startup(function(use)
       "rcarriga/nvim-notify",
     },
   })
+  use "voldikss/vim-translator"
  use { 'michaelb/sniprun', run = 'bash ./install.sh'}
   if PACKER_BOOTSTRAP then
     require("packer").sync()

@@ -1,6 +1,6 @@
 local opt = vim.opt
 opt.number = true
-opt.relativenumber = true
+opt.relativenumber = false
 -- 寄存器和系统剪切板同步
 opt.clipboard = "unnamedplus"
 -- cmdline 高度 为 2 行
@@ -35,9 +35,9 @@ opt.termguicolors = true
 opt.timeoutlen = 1000
 -- 开启 持久化 重做 (enable persistent undo)
 opt.undofile = true
--- 更快的完成速度(默认是 4000ms)
+-- 更快的完成速度认 4000ms)
 opt.updatetime = 300
--- 禁用备份, 如果有其他程序在编辑,就不能编辑该文件
+-- 禁用备份, 如果其他程序在编辑,就不能编辑该文件
 opt.writebackup = false
 -- convert tabs to spaces
 opt.expandtab = true

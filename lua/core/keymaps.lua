@@ -69,3 +69,26 @@ keymap("t", "<C-l>", "<C-\\><C-N><C-w>l", term_opts)
 -- keymap("n", "<leader>f", "<cmd>Telescope find_files<cr>", opts)
 keymap("n", "<leader>f", "<cmd>lua require'telescope.builtin'.find_files(require('telescope.themes').get_dropdown({ previewer = false }))<cr>", opts)
 keymap("n", "<c-t>", "<cmd>Telescope live_grep<cr>", opts)
+
+
+
+-- Translate -- 
+-- """ Configuration example
+-- " Echo translation in the cmdline
+-- nmap <silent> <Leader>t <Plug>Translate
+-- vmap <silent> <Leader>t <Plug>TranslateV
+-- " Display translation in a window
+-- nmap <silent> <Leader>w <Plug>TranslateW
+-- vmap <silent> <Leader>w <Plug>TranslateWV
+-- " Replace the text with translation
+-- nmap <silent> <Leader>r <Plug>TranslateR
+-- vmap <silent> <Leader>r <Plug>TranslateRV
+-- " Translate the text in clipboard
+-- nmap <silent> <Leader>x <Plug>TranslateX
+-- who are you
+--
+
+keymap("n", "<leader>tr","<Plug>TranslateW", opts)
+keymap("n", "<leader>trr","<Plug>TranslateR", opts)
+keymap("v", "<leader>trr","<Plug>TranslateRV", opts)
+keymap("v", "<leader>tr","<Plug>TranslateWV", opts)
