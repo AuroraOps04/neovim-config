@@ -41,7 +41,6 @@ configs.setup({
 		enable = true,
 	},
 })
-require("nvim-ts-autotag").setup()
 local inst_status_ok, inst = pcall(require, "nvim-treesitter.install")
 if not inst_status_ok then
 	return error("treesitter is not aliveable")
