@@ -92,3 +92,7 @@ keymap("n", "<leader>tr","<Plug>TranslateW", opts)
 keymap("n", "<leader>trr","<Plug>TranslateR", opts)
 keymap("v", "<leader>trr","<Plug>TranslateRV", opts)
 keymap("v", "<leader>tr","<Plug>TranslateWV", opts)
+
+
+-- toggle
+keymap("n", "<leader>r", "", opts)

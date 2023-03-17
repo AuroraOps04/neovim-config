@@ -26,7 +26,7 @@ null_ls.setup({
     }),
     formatting.black.with({ extra_args = { "--preview", "-l 79" } }),
     formatting.stylua,
-    diagnostics.flake8,
+    -- diagnostics.flake8,
     diagnostics.eslint_d,
     formatting.eslint_d,
     formatting.google_java_format,

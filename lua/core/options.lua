@@ -9,7 +9,7 @@ opt.cmdheight = 1
 opt.completeopt = { "menuone", "noselect" }
 -- 不知道干嘛的
 opt.conceallevel = 0
-opt.fileencoding = 'utf-8'
+opt.fileencoding = "utf-8"
 opt.hlsearch = true
 opt.ignorecase = true
 opt.mouse = "a"
@@ -54,14 +54,21 @@ opt.wrap = false
 opt.scrolloff = 8
 opt.sidescrolloff = 8
 
-opt.shortmess:append "c"
+opt.shortmess:append("c")
 
-vim.cmd "set whichwrap+=<,>,[,],h,l"
+vim.cmd("set whichwrap+=<,>,[,],h,l")
 -- 将 `-` 设置为字符的连接符
-vim.cmd [[set iskeyword+=-]]
-vim.cmd [[set formatoptions-=cro]] -- TODO: this doesn't seem to work
+vim.cmd([[set iskeyword+=-]])
+vim.cmd([[set formatoptions-=cro]]) -- TODO: this doesn't seem to work
 -- opt.background = "light"
-vim.o.foldcolumn = '1' -- '0' is not bad
+vim.o.foldcolumn = "1" -- '0' is not bad
 vim.o.foldlevel = 99 -- Using ufo provider need a large value, feel free to decrease the value
 vim.o.foldlevelstart = 99
 vim.o.foldenable = true
+
+-- vim.o.G.
+
+-- vim.g.translator_target_lang = "zh"
+-- vim.g.translator_default_engines = { "bing", "youdao" }
+-- vim.g.translator_proxy_url = "http://localhost:7890"
+-- translator_default_engines = { "youdao", "bing", "google", "haici" }
