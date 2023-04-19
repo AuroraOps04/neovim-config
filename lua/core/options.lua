@@ -60,7 +60,7 @@ vim.cmd("set whichwrap+=<,>,[,],h,l")
 -- 将 `-` 设置为字符的连接符
 vim.cmd([[set iskeyword+=-]])
 vim.cmd([[set formatoptions-=cro]]) -- TODO: this doesn't seem to work
--- opt.background = "light"
+opt.background = "light"
 vim.o.foldcolumn = "1" -- '0' is not bad
 vim.o.foldlevel = 99 -- Using ufo provider need a large value, feel free to decrease the value
 vim.o.foldlevelstart = 99
