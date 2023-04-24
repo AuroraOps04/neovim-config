@@ -29,7 +29,7 @@ local servers = {
 	"tsserver",
 	"gopls",
 	"cssls",
-	"nginx",
+	-- "nginx",
 }
 mason_lspconfig.setup({
 	ensure_installed = servers,

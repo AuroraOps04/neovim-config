@@ -197,7 +197,7 @@ return packer.startup(function(use)
 			})
 		end,
 	})
-	use("chr4/nginx.vim")
+	-- use("chr4/nginx.vim")
 	if PACKER_BOOTSTRAP then
 		require("packer").sync()
 	end
