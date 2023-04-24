@@ -7,4 +7,6 @@
 lombok dir in ~/.jdtls/plugins/
 - jdtls
 jdtls dir is ~/.jdtls
+- nginx_beautifier
+npm install -g nginxbeautifier
 

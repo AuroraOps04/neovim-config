@@ -35,6 +35,7 @@ null_ls.setup({
     formatting.gofmt,
     formatting.goimports,
     formatting.golines,
+    formatting.nginx_beautifier
     -- formatting.black,
   },
   -- this config is not work
