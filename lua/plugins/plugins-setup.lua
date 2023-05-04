@@ -63,7 +63,7 @@ return packer.startup(function(use)
     requires = {
       "nvim-tree/nvim-web-devicons", -- optional, for file icons
     },
-    cmd = "NvimTreeToggle"
+    -- cmd = "NvimTreeToggle"
     -- use("morhetz/gruvbox"),
     --    tag = 'nightly' -- optional, updated every week. (see issue #1193)
   })
