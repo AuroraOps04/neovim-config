@@ -127,7 +127,7 @@ capabilities.textDocument.foldingRange = {
 
 local status_ok, cmp_nvim_lsp = pcall(require, "cmp_nvim_lsp")
 if not status_ok then
-	return
+	return M
 end
 
 -- 这里是整合能力(为了传给LSP服务器)  也配置给了 cmp_nvim_lsp
