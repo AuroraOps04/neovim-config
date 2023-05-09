@@ -19,6 +19,7 @@ configs.setup({
     "go",
     "regex",
     "html",
+    "vue",
   },
   sync_install = true,
   ignore_install = { "" }, -- List of parsers to ignore installing
